@@ -1,4 +1,4 @@
-# Micro task and microtask
+# Microtask and microtask
 
 The term microtask makes reference to the tasks that have the highest priority.
 These task are executed in the Microtask Queue before the Task Queue o Macrotask Queue.
@@ -29,6 +29,8 @@ The image below shows how this works:
 The event loop push all functions in the Microtask stack to the callstack once the microtask stack is empty the event loop will start to push all functions in the macrotask stack to the callstack.
 
 ![Microtask and Macrotask explanation](./diagramMMT.svg)
+
+To see this in action go to this file: [micro-macro-task](./micro-macro-task.js)
 Source of diagram:
 
 ```
