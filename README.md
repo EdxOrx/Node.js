@@ -1,3 +1,3 @@
 # Advanced Node.js topics
 
-- [Micro task and micro task](./MicroMacroTask/README.md)
+- [Micro task and macro task](./MicroMacroTask/README.md)
