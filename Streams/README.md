@@ -20,3 +20,7 @@ You can build interesting stuffs with Streams like:
 - Process data in real time: Using streams you could make real time applications like websockets, audio and video streaming.
 
 - Handling files: Instead of loading a huge file into memory that could crash your app you could use streams to efficiently handle huge files.
+
+## piping
+
+When using streams in Node.js there is a function `pipe`, this function allow us to connect readable streams to a writable stream making easy to handle straming operations with less code.
