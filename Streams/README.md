@@ -21,6 +21,32 @@ You can build interesting stuffs with Streams like:
 
 - Handling files: Instead of loading a huge file into memory that could crash your app you could use streams to efficiently handle huge files.
 
+### Difference between duplex and transform
+
+The main diference between those types of stream is the duplex strem is independent as an example in a video call you can 'write' and 'read' but that does not depend on what you are talking
+
+In a transform stream is more like a process in the same example you can think of a video call and if you want to process the audio or video to something like a translator so depend on the input.
+
+```
+                    Duplex Stream
+                ------------------|
+        Read  <-----               External Source
+You           ------------------|
+        Write ----->               External Sink
+                ------------------|
+You don't get what you write. It is sent to another source.
+```
+
+```
+                            Transform Stream
+                    --------------|--------------
+    You     Write  ---->                   ---->  Read  You
+                    --------------|--------------
+    You write something, it is transformed, then you read something.
+```
+
+[user568109 (20 Ago 2013). NodeJS: What's the difference between a Duplex stream and a Transform stream?](https://stackoverflow.com/questions/18335499/nodejs-whats-the-difference-between-a-duplex-stream-and-a-transform-stream)
+
 ## piping
 
 When using streams in Node.js there is a function `pipe`, this function allow us to connect readable streams to a writable stream making easy to handle straming operations with less code.
