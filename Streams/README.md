@@ -50,3 +50,18 @@ You don't get what you write. It is sent to another source.
 ## piping
 
 When using streams in Node.js there is a function `pipe`, this function allow us to connect readable streams to a writable stream making easy to handle straming operations with less code.
+
+## Chunk
+
+Something important in streams are chunks that's basically the data already 'divided' you are transmitting over the stream
+
+The chunks can be modified in some ways like the size of the chunk.
+
+These are the options.
+
+| Mes           | Stream             | Purpose                                                                         |
+| ------------- | ------------------ | ------------------------------------------------------------------------------- |
+| highWaterMark | all                | The maximum number of bytes to store in the internal buffer. Default=16kb       |
+| objectMode    | all                | Whether this stream should behave as a stream of objects                        |
+| encoding      | Readable, Writable | buffers will be decoded to strings                                              |
+| allowHalfOpen | Duplex, Socket     | automatically end the readable side when the writable side ends and vice versa. |
