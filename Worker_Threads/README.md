@@ -24,7 +24,7 @@ Is the capability to execute several task at the same time using several threads
 you can think of this as having one chef per dish at the same time.
 
 ```
-Tiempo →
+Time →
 CPU1: Task A: █████████████████
 CPU2: Task B: █████████████████
 CPU3: Task C: █████████████████

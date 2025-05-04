@@ -96,4 +96,19 @@ if (isMainThread) {
  * complex data structures like arrays and objects but you 
  * could use JSON.stringify the problem is that this is not very
  * efficient
+ * 
+ * But where do we use Atomics.load(), Atomics.store() etc?
+ * You can use all this functions directly with the Uint8Array
+ * eg:
+ * 
+ * const buffer = new SharedArrayBuffer(16);
+ * const uint8 = new Uint8Array(buffer);
+ * uint8[0] = 5;
+ * console.log(Atomics.store(uint8, 0, 2));
+ * // Expected output: 2
+ * console.log(Atomics.load(uint8, 0));
+ * // Expected output: 2
+ * 
+ * As you can see the Atomics are being used directly with Uint8Array
+ * 
  */
