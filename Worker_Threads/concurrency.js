@@ -18,3 +18,15 @@ fibonacci(40);
 console.timeEnd('Task 2');
 
 console.timeEnd('Total');
+
+/**
+ * In the terminal you will see something like:
+ * 
+ * Starting task CPU 1...
+ * Task 1: 781.889ms // This could be different
+ * Starting task CPU 2...
+ * Task 2: 785.725ms // This could be different
+ * Total: 1.573s
+ * 
+ * You will notice the first task blocks the second one
+ */

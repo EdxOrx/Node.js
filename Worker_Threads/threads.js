@@ -52,3 +52,14 @@ if (isMainThread) {
     */
     parentPort.postMessage(result);
 }
+
+/**
+ * In the terminal you will see something like:
+ * 
+ * Result: [ 102334155, 102334155 ]
+ * Total: 810.869ms
+ * 
+ * As you can notice if you compare this with the concurrency 
+ * you will see using threads will be faster running 2 times the 
+ * fibonacci function
+ */
