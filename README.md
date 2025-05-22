@@ -3,3 +3,4 @@
 - [Micro task and macro task](./MicroMacroTask/README.md)
 - [Streams](./Streams/README.md)
 - [Memory Management](./MemoryManagement/README.md)
+- [Worker Threads](./Worker_Threads/README.md)
